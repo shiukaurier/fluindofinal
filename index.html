@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluindo — Entenda o seu corpo, fase por fase</title>
+  <meta name="description" content="O Fluindo acompanha o seu ciclo menstrual e explica cada fase: hormônios, sensações, ultrassom e o que acontece no seu corpo.">
+  <meta name="theme-color" content="#e8a9b0">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Marcellus&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <main id="conteudo">
+    <!-- Hero -->
+    <section class="hero-home">
+      <div class="container grid-2">
+        <div class="reveal">
+          <p class="eyebrow">Educação sobre o ciclo menstrual</p>
+          <h1 class="display">Entenda o seu corpo,<br>fase por fase.</h1>
+          <p class="lead">O Fluindo acompanha o seu ciclo e transforma cada fase em aprendizado: descubra o que acontece no seu organismo, como os hormônios agem e por que você sente o que sente.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#acompanhamento">Acompanhar meu ciclo</a>
+            <a class="btn btn-secondary" href="#fases">Conhecer as fases</a>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="wheel-wrap" id="wheel"></div>
+          <p class="wheel-info" id="wheel-info" aria-live="polite">Toque em um dia da roda para ver a fase correspondente.</p>
+          <p class="disclaimer"><span data-icon="alert"></span>Conteúdo educativo. Não substitui avaliação médica nem método contraceptivo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Acompanhamento -->
+    <section id="acompanhamento">
+      <div class="container">
+        <div class="grid-2 reveal" style="align-items:center">
+          <div>
+            <p class="eyebrow">Acompanhamento do ciclo</p>
+            <h2 class="display-sm">Em que fase do ciclo você está hoje?</h2>
+            <p>Informe a data da sua última menstruação e a duração média do seu ciclo. O Fluindo estima o dia atual e apresenta a fase correspondente. Seus dados ficam apenas neste dispositivo.</p>
+          </div>
+          <div class="phase-strip" id="phase-strip"></div>
+        </div>
+        <div id="tracker" class="reveal" style="margin-top:1.5rem"></div>
+        <p class="center" style="margin-top:1.2rem"><a href="acompanhar.html">Abrir o acompanhamento completo, com diário de sintomas e previsões →</a></p>
+      </div>
+    </section>
+
+    <!-- Quatro fases -->
+    <section id="fases">
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow">As quatro fases</p>
+          <h2 class="display-sm">Uma jornada que se repete, com propósitos diferentes.</h2>
+        </div>
+        <div class="grid-4" id="phase-cards" style="margin-top:2rem"></div>
+      </div>
+    </section>
+
+    <!-- Aprenda -->
+    <section>
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow">Aprenda no seu ritmo</p>
+          <h2 class="display-sm">Conteúdo que explica o porquê, não só o quando.</h2>
+          <p class="lead">O Fluindo une fisiologia e linguagem acessível para você entender o que acontece no hipotálamo, na hipófise, nos ovários e no útero — e como isso aparece nas suas sensações.</p>
+        </div>
+        <div class="grid-3" style="margin-top:2rem">
+          <article class="card learn-card reveal">
+            <span class="learn-ico" data-icon="brain"></span>
+            <h3>Por dentro do seu corpo</h3>
+            <p>Como hipotálamo, hipófise, ovários e útero trabalham juntos e conversam entre si em cada ciclo.</p>
+            <a class="btn btn-sm" href="corpo.html">Acessar</a>
+          </article>
+          <article class="card learn-card reveal">
+            <span class="learn-ico" data-icon="chart"></span>
+            <h3>Hormônios em gráficos</h3>
+            <p>FSH, LH, estradiol e progesterona: veja as tendências ao longo dos dias do ciclo.</p>
+            <a class="btn btn-sm" href="hormonios.html">Acessar</a>
+          </article>
+          <article class="card learn-card reveal">
+            <span class="learn-ico" data-icon="scan"></span>
+            <h3>Ultrassom x Ilustração</h3>
+            <p>Veja como cada fase aparece em exames de ultrassom e compare com ilustrações didáticas de livro.</p>
+            <a class="btn btn-sm" href="ultrassom.html">Acessar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/icons.js"></script>
+  <script src="js/cycle.js"></script>
+  <script src="js/illustrations.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/tracker.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

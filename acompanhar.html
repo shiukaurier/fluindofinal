@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acompanhar ciclo — Fluindo</title>
+  <meta name="description" content="Estime a fase do seu ciclo, veja o calendário, as previsões e registre sintomas em um diário salvo só no seu dispositivo.">
+  <meta name="theme-color" content="#e8a9b0">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Marcellus&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="acompanhar">
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="eyebrow">Acompanhamento do ciclo</p>
+        <h1 class="display">Acompanhar meu ciclo</h1>
+        <p class="lead">Informe seus dados para ver a fase estimada, o calendário com as próximas fases e a janela fértil. Toque em um dia do calendário para registrar como você se sentiu.</p>
+        <p class="important"><span data-icon="alert"></span><span><strong>Importante:</strong> as datas são estimativas baseadas em médias (fase lútea de cerca de 14 dias). Não use como método contraceptivo.</span></p>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="container">
+        <div id="tracker" class="reveal"></div>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="container tracker-grid">
+        <div class="card diary reveal" id="diary"></div>
+        <div class="stack reveal">
+          <div class="card">
+            <h3>Próximos ciclos</h3>
+            <div id="predictions"></div>
+          </div>
+          <div class="card">
+            <h3>Histórico de menstruações</h3>
+            <div id="history"></div>
+          </div>
+          <div class="card">
+            <h3>Seus dados</h3>
+            <p class="small">Tudo fica salvo no armazenamento local deste navegador. Nada é enviado para servidores.</p>
+            <div class="form-actions" style="justify-content:flex-start">
+              <button type="button" class="btn btn-sm btn-secondary" id="export"><span data-icon="download"></span>Exportar (JSON)</button>
+              <button type="button" class="btn btn-sm btn-danger" id="wipe"><span data-icon="trash"></span>Apagar tudo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/icons.js"></script>
+  <script src="js/cycle.js"></script>
+  <script src="js/illustrations.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/tracker.js"></script>
+  <script src="js/acompanhar.js"></script>
+</body>
+</html>
